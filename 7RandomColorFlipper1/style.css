@@ -1,0 +1,33 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    background: gray;
+}
+button {
+    cursor: pointer;
+    width: 75px;
+    height: 50px;
+    margin: 5px;
+    border: 1px black solid;
+    border-radius: 10px;
+}
+
+#blue {
+    background: blue;
+    color: white;
+}
+#green {
+    background: green;
+    color: white;
+}
+#red {
+    background: red;
+    color: white;
+}
+#random {
+    background: gray;
+    color: white;
+}
