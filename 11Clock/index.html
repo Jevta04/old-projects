@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+            href="https://fonts.googleapis.com/css2?family=VT323&display=swap"
+            rel="stylesheet"
+    />
+    <!-- dayJS -->
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/dayjs.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/plugin/utc.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/plugin/timezone.js"></script>
+    <!-- micromodalJS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/micromodal/0.6.1/micromodal.min.js"></script>
+
+    <script>
+        dayjs.extend(window.dayjs_plugin_utc);
+        dayjs.extend(window.dayjs_plugin_timezone);
+    </script>
+
+    <title>Clock</title>
+</head>
+<body>
+Ovaj sat koristi samo DayJS; Nisam koristio micromodal da bih napravio dugme na kojem menjam timezone; mngo vremena sam potrosio na npm i skripte za ubacivanje ovih paketa
+<div class="container">
+    <h2 id="timezoneElement">Timezone</h2>
+    <h1 id="timeElement">00:00:00</h1>
+    <h3 id="dateElement">dddd, D MMMM, YYYY</h3>
+</div>
+<script src="index.js"></script>
+</body>
+</html>
+<!--
+// Bundler - instaliranje npm packages-a; Node JS
+// Browser - ubacivanje odgovarajucih script tag-ova
+-->

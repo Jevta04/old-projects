@@ -1,0 +1,188 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: '911 Porscha', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    height: 100vh;
+    transition: transform 0.3s ease;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    height: 10vh;
+}
+
+.nav-item {
+    cursor: pointer;
+    font-size: 1.2rem;
+    color: #333;
+    text-decoration: none;
+}
+
+.black-bg {
+    background-color: #000;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 999;
+    opacity: 0.6;
+    transition: transform 0.85s cubic-bezier(.76, 0, .24, 1);
+    transform: translateX(100%);
+    cursor: pointer;
+}
+
+.about-aside {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 70vw;
+    padding-right: 50px;
+    background: #f4f4f4;
+    color: #333;
+    z-index: 1000;
+    transform: translateX(100%);
+    transition: transform 0.85s cubic-bezier(.76, 0, .24, 1);
+    display: flex;
+    flex-direction: column;
+}
+
+
+.about-aside p {
+    padding: 20px 0px;
+    font-size: 1em;
+    line-height: 1.5;
+    align-self: flex-end;
+    text-align: left;
+    margin: auto 0 auto auto;
+}
+
+#close-button {
+    margin: auto 0 auto auto;
+    font-size: 1.2rem;
+    cursor: pointer;
+    color: #000000;
+}
+
+.about-aside h3 {
+    padding: 10vh 50px;
+    font-size: 2rem;
+    margin: auto auto auto 0;
+    color: #000000;
+}
+
+#contacts {
+    text-align: right;
+    font-size: 1rem;
+    margin: auto 0 auto auto;
+}
+
+#contacts a {
+    color: #333;
+    text-decoration: none;
+    transition: opacity 0.2s ease;
+}
+
+#contacts a:hover {
+    opacity: 0.5;
+}
+
+#copyright-about {
+    padding: 16px 50px;
+    margin: auto auto auto 0;
+    font-size: 1rem;
+    color: #000000;
+    text-align: left;
+    align-self: flex-start;
+    font-family: '911 Porscha Bold', sans-serif;
+    font-weight: bold;
+    vertical-align: bottom;
+}
+
+
+
+.img-list {
+    margin: 0px 50px;
+    height: 80vh;
+    vertical-align: middle;
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+    align-items: center;
+    gap: 60vh;
+    padding: 10px 0;
+    scroll-behavior: smooth;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    cursor: grab;
+    user-select: none;
+}
+
+.img-list img {
+    position: relative;
+    left: 37vw;
+    width: 40vh;
+    height: 78vh;
+    object-fit: cover;
+
+    box-shadow: 1vh 1vh 1vh rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease;
+}
+
+.img-list::-webkit-scrollbar {
+    display: none;
+}
+
+
+
+
+
+
+footer {
+    height: 10vh;
+    padding: 20px 50px;
+    font-size: 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    vertical-align: bottom;
+    text-align: center;
+}
+
+
+footer ul {
+    min-width: 168.75px;
+    list-style: none;
+    text-align: left;
+    display: flex;
+    padding: 10px 0;
+    vertical-align: text-bottom;
+    flex-direction: column;
+}
+
+#copyright {
+    padding: 21px 0 0 0;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+footer li {
+    padding: 5px 0 0 0;
+    cursor: pointer;
+}
+
+.current-view {
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+}

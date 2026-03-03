@@ -1,0 +1,24 @@
+html,body{
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: antiquewhite;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    border: 10px black solid;
+    border-radius: 25px;
+    background-color: lightsalmon;
+    padding: 5%;
+    text-align: center;
+    margin: auto;
+}

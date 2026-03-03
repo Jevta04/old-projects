@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Metrics Converter</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Metrics Converter</h1>
+            <select id="metrics">
+                <option disabled selected>Select Metric</option>
+                <option value="CToF">Celsius to Fahrenheit</option>
+                <option value="CmToIn">Centimeter to Inch</option>
+                <option value="LbToKg">Kilogram to Pound</option>
+                <option value="LToGal">Liter to Gallon</option>
+                <option value="MsToKph">M/s to Km/h</option>
+                <option value="MphToKph">Mile/h to Km/h</option>
+                <option value="kJtoKcal">kJ to kcal</option>
+                <option value="km2Tom2">km^2 to m^2</option>
+            </select>
+            <div class="input-container">
+                <div>
+                    <label>From:</label>
+                    <span id="metric1"></span>
+                </div>
+                <input type="text" id="from">
+            </div>
+    <div class="input-container">
+        <div>
+        <label>To:</label>
+        <span id="metric2"></span>
+        </div>
+    <input type="text" id="to">
+    </div>
+            <button id="convert" onclick="convert()">Convert</button>
+    </div>
+<script src="index.js"></script>
+</body>
+</html>

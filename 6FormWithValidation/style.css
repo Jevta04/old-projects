@@ -1,0 +1,73 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    color: black;
+    background-color: rgb(255, 194, 172);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 20px;
+}
+
+.form-container {
+    background-color: hsl(0, 0%, 80%);
+    border-radius: 20px;
+    box-shadow: 4px 4px hsl(0, 0%, 15%);
+    height: 50%;
+    width: 25%;
+    padding: 0 50px 20px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-container h1 {
+    font-size: 25px;
+    margin: 20px 0px;
+    text-align: center;
+}
+
+.form-container h3 {
+    font-size: 20px;
+    margin: 15px 0px 2px 0px;
+    text-align: left;
+}
+
+.form-container input {
+    height: 25px;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid coral;
+}
+
+.input-control input:focus {
+    outline: 0;
+}
+
+.input-control.success input {
+    border-color: rgb(0, 255, 0);
+}
+
+.input-control.error input {
+    border-color: rgb(255, 0, 0);
+}
+
+.input-control .error {
+    color: rgb(255, 0, 0);
+    font-size: 9px;
+    height: 13px;
+}
+
+#submit-button {
+    background-color: hsl(0, 0%, 70%);
+    align-self: center;
+    width: 150px;
+    height: 40px;
+    border-radius: 25px;
+    font-size: 25px;
+    padding: 5px;
+    box-shadow: 2px 5px hsl(0, 0%, 50%);
+    cursor: pointer;
+}

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <div class="container">
+        <h1>To-Do List</h1>
+        <form id="todo-form">
+            <input type="text" id="task-input" placeholder="New Task" required>
+            <button type="submit" onclick="newTask()">Add New Task</button>
+        </form>
+        <ul class="task-list" id="task-list">
+        </ul>
+        <div class=" task-count">
+            <p><span id="completed-count">0</span> completed out of <span id="total-count">0</span> tasks
+            </p>
+            <meter id="meter-bar" value="0" min="0" low="30" high="60" optimum="80" max="100"></meter>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>
